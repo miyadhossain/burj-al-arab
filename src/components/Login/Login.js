@@ -23,9 +23,8 @@ const Login = () => {
         history.replace(from);
       })
       .catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
-        const email = error.email;
+        console.log(errorMessage);
       });
   };
   return (
